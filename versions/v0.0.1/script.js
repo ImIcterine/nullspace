@@ -194,6 +194,11 @@ window.onload = async () => {
             {
                 text: "Credits",
                 color: 0xffffff
+            },
+            "endl",
+            {
+                text: "                                          v0.0.1",
+                color: 0xffffff
             }
         ]
     }
@@ -309,21 +314,3 @@ window.onload = async () => {
         camX += 1
     })
 }
-
-/*
-const newTermTxt = structuredClone(mainMenuText)
-
-        for (let item of newTermTxt.text) {
-            
-            if (typeof item === "string") continue
-            
-            delete item.highlight
-            item.color = 0xffffff
-        }
-        // Update
-        mainMenuText = newTermTxt
-        const newTerm = newTerminal(newTermTxt)
-        mainMenuCont.removeChild(term)
-        mainMenuCont.addChildAt(newTerm, 0)
-        term = newTerm
-*/
