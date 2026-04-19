@@ -16,5 +16,5 @@ canvas {
 
 @font-face {
     font-family: "DepartureMono";
-    src: url("assets/DepartureMono-Regular.otf") format("opentype");
+    src: url("https://cdn.jsdelivr.net/gh/ImIcterine/nullspace@main/assets/pack0/DepartureMono-Regular.otf") format("opentype");
 }
