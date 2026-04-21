@@ -381,7 +381,7 @@ window.onload = async () => {
 
     logo.anchor.set(0.5)
     logo.position.set(x / 2, 65)
-    //mainMenuCont.addChild(logo)
+    mainMenuCont.addChild(logo)
     logo.scale.set(3)
 
     function isMode(mode) {
