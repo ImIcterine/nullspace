@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+canvas {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+    border-style: solid;
+    border-width: 7px;
+    border-color: dodgerblue;
+    border-radius: 7px;
+}
+
+@font-face {
+    font-family: "DepartureMono";
+    src: url("https://cdn.jsdelivr.net/gh/ImIcterine/nullspace@main/assets/pack0/DepartureMono-Regular.otf") format("opentype");
+}
