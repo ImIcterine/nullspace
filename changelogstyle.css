@@ -1,0 +1,20 @@
+body {
+    font-family: "DepartureMono";
+    background-color: black;
+    color: white;
+}
+
+#header {
+    background-color: #222222;
+    padding: 0px;
+    margin: 0px;
+}
+
+#header * {
+    image-rendering: pixelated;
+}
+
+@font-face {
+    font-family: "DepartureMono";
+    src: url("./assets/DepartureMono-Regular.otf") format("opentype");
+}

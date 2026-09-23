@@ -1,0 +1,132 @@
+:root {
+    --debugmenubarw: 30px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+canvas {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+    border-style: solid;
+    border-width: 7px;
+    border-color: dodgerblue;
+    border-radius: 7px;
+}
+
+.bd {
+    font-weight: bold;
+}
+
+.debugcont {
+    display: none;
+
+    background-color: rgba(127, 127, 127, 0.95);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 800px;
+    height: 600px;
+
+    font-size: 10px;
+    font-family: "DepartureMono";
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkslategray;
+}
+
+.debugcont > .debugconttop {
+    background-color: rgba(64, 64, 64, 1);
+    height: var(--debugmenubarw);
+    width: 100%;
+    display: flex;
+}
+
+.debugconttabs {
+    background-color: rgba(64, 64, 64, 1);
+    height: var(--debugmenubarw);
+    width: calc(100% - var(--debugmenubarw));
+    display: flex;
+}
+
+.debugcontclose {
+    background-color: rgba(200, 0, 0, 1);
+    border-style: none;
+    height: var(--debugmenubarw);
+    width: var(--debugmenubarw);
+    color: white;
+    font-family: "DepartureMono";
+}
+
+.debugcontclose:hover {
+    background-color: rgba(232, 0, 0, 1);
+}
+
+.debugcontbutton {
+    background-color: rgba(64, 64, 64, 1);
+    border-style: none;
+    border-right: solid 1px black;
+    height: var(--debugmenubarw);
+    width: 100%;
+    color: white;
+    font-family: "DepartureMono";
+}
+
+.debugcontbutton:hover {
+    background-color: rgba(96, 96, 96, 1);
+}
+
+.debugcontbuttonsel {
+    background-color: rgba(128, 128, 128, 1);
+}
+
+.debugcontbuttonsel:hover {
+    background-color: rgba(160, 160, 160, 1);
+}
+
+
+
+.debugcontinfo {
+    position: relative;
+
+    width: 100%;
+    height: calc(100% - var(--debugmenubarw));
+}
+
+.debugcontinfo * {
+    font-family: "DepartureMono";
+    font-size: 16px;
+}
+
+.debugcontinfo p {
+    margin: 0px;
+}
+
+.debugcontent {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+.debugcontentsel {
+    display: block;
+}
+
+
+@font-face {
+    font-family: "DepartureMono";
+    src: url("./assets/DepartureMono-Regular.otf") format("opentype");
+}
